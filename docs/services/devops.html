@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataNatus | DevOps Case Study</title>
+    <style>
+        :root {
+            --primary-color: #0A2540;
+            --secondary-color: #00D4FF;
+            --bg-light: #F6F9FC;
+            --text-main: #425466;
+            --text-dark: #0A2540;
+            --white: #FFFFFF;
+            --success: #00C48C;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-main); line-height: 1.7; }
+        header { background-color: var(--primary-color); color: var(--white); padding: 4rem 2rem; text-align: center; border-bottom: 4px solid var(--secondary-color); }
+        .nav { margin-bottom: 2rem; }
+        .nav a { color: var(--secondary-color); text-decoration: none; font-weight: bold; margin: 0 1rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
+        .case-study-header { text-align: center; margin-bottom: 3rem; }
+        .case-study-header h1 { color: var(--text-dark); font-size: 2.5rem; margin-bottom: 1rem; }
+        .badge { background: var(--secondary-color); color: var(--primary-color); padding: 0.4rem 1rem; border-radius: 20px; font-weight: bold; font-size: 0.9rem; display: inline-block; margin-bottom: 1rem;}
+        .card { background: var(--white); padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem; border-left: 5px solid var(--primary-color); }
+        .card h3 { color: var(--text-dark); margin-bottom: 1rem; font-size: 1.4rem; display: flex; align-items: center; gap: 10px; }
+        .metrics { display: flex; gap: 2rem; margin-top: 3rem; background: var(--primary-color); color: var(--white); padding: 2rem; border-radius: 8px; }
+        .metric-item { flex: 1; text-align: center; }
+        .metric-item span { display: block; font-size: 2.5rem; color: var(--secondary-color); font-weight: bold; margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="/">&larr; Back to Home</a>
+        </div>
+        <h2>DevOps Practice Optimization</h2>
+    </header>
+
+    <div class="container">
+        <div class="case-study-header">
+            <span class="badge">Enterprise Security & Automation</span>
+            <h1>Zero-Trust Serverless Architecture</h1>
+            <p>Streamlining deployments while enforcing strict security standards across cloud environments.</p>
+        </div>
+
+        <div class="card">
+            <h3>The Challenge</h3>
+            <p>A financial services client struggled with manual deployment bottlenecks and insecure management of application secrets. They needed a highly automated, secure architecture for their serverless workloads that completely eliminated hardcoded credentials and restricted public internet access to their backend logic.</p>
+        </div>
+
+        <div class="card" style="border-left-color: var(--secondary-color);">
+            <h3>The DataNatus Solution</h3>
+            <p>We completely overhauled their CI/CD pipelines and infrastructure provisioning. At the core, we deployed an Azure Function App shielded behind a robust Application Gateway. To enforce a zero-trust model, we integrated Azure Key Vault for centralized secrets management and mandated the use of Managed Identities for all inter-resource communication, removing the need for developers to handle connection strings.</p>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-item">
+                <span>100%</span>
+                Zero-Trust Compliance
+            </div>
+            <div class="metric-item">
+                <span>4x</span>
+                Faster Deployment Cycles
+            </div>
+            <div class="metric-item">
+                <span>0</span>
+                Hardcoded Secrets
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataNatus | Data & AI Case Study</title>
+    <style>
+        /* Shared CSS from above */
+        :root { --primary-color: #0A2540; --secondary-color: #00D4FF; --bg-light: #F6F9FC; --text-main: #425466; --text-dark: #0A2540; --white: #FFFFFF; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-main); line-height: 1.7; }
+        header { background-color: var(--primary-color); color: var(--white); padding: 4rem 2rem; text-align: center; border-bottom: 4px solid var(--secondary-color); }
+        .nav { margin-bottom: 2rem; }
+        .nav a { color: var(--secondary-color); text-decoration: none; font-weight: bold; margin: 0 1rem; }
+        .container { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
+        .case-study-header { text-align: center; margin-bottom: 3rem; }
+        .case-study-header h1 { color: var(--text-dark); font-size: 2.5rem; margin-bottom: 1rem; }
+        .badge { background: var(--secondary-color); color: var(--primary-color); padding: 0.4rem 1rem; border-radius: 20px; font-weight: bold; font-size: 0.9rem; display: inline-block; margin-bottom: 1rem;}
+        .card { background: var(--white); padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem; border-left: 5px solid var(--primary-color); }
+        .card h3 { color: var(--text-dark); margin-bottom: 1rem; font-size: 1.4rem; }
+        .highlight-quote { font-style: italic; color: var(--text-dark); padding: 1.5rem; border-left: 4px solid var(--secondary-color); background: #f0f7fc; margin-top: 2rem; border-radius: 0 8px 8px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="/">&larr; Back to Home</a>
+        </div>
+        <h2>Data & AI Engineering</h2>
+    </header>
+
+    <div class="container">
+        <div class="case-study-header">
+            <span class="badge">Machine Learning Operations (MLOps)</span>
+            <h1>Intelligent Retrieval with Multimodal RAG</h1>
+            <p>Transforming unstructured enterprise data into instant, actionable knowledge.</p>
+        </div>
+
+        <div class="card">
+            <h3>The Challenge</h3>
+            <p>A global research firm accumulated massive volumes of unstructured, multimodal data across various internal silos. Their employees spent excessive hours searching for documentation. Early attempts to build an internal search tool resulted in frequent metadata extraction failures and severe 429 rate-limiting errors when querying their foundational models at scale.</p>
+        </div>
+
+        <div class="card" style="border-left-color: var(--secondary-color);">
+            <h3>The DataNatus Solution</h3>
+            <p>We engineered a highly resilient Multimodal Retrieval-Augmented Generation (RAG) pipeline utilizing the Gemini API within Vertex AI. By restructuring their data processing workflows via Jupyter notebooks, we established a standardized method for metadata extraction. To ensure high availability and prevent 429 errors, we implemented intelligent exponential backoff and queuing mechanisms, optimizing the pipeline for enterprise-scale traffic.</p>
+        </div>
+
+        <div class="highlight-quote">
+            "By implementing a robust RAG architecture and solving the complex metadata and rate-limiting bottlenecks, DataNatus enabled our internal teams to query complex, multimodal databases instantly—reducing average search time by over 80%."
+        </div>
+    </div>
+
+</body>
+</html>
